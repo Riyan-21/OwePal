@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayBook</title>
+    <link rel="stylesheet" href="entry.css">
+    <link rel="icon" href="../icons/owepal_icon.png" type="image/png">
+</head>
+<body>
+  <div class="entry">
+    <div class="formholder">
+      <div class="eheader">
+          <h1>New Entry</h1>
+      </div>
+      <div class="amountbox">
+          <input placeholder="Enter Amount" type="number" name="amt" id="inpt3" required>
+        </div>
+        <div class="owebox">
+          <input value="red" type="radio" name="owe" id="inpt41" required>
+          <input value="green" type="radio" name="owe" id="inpt42" required>
+        </div>
+        <div class="oweboxtext">
+          <h2 onclick="document.getElementById(`inpt41`).checked = true;" style="cursor: pointer;">I owe them</h2>
+          <h2 onclick="document.getElementById(`inpt42`).checked = true;" style="cursor: pointer;">They owe me</h2>
+        </div>
+        <div class="description">
+          <textarea id="inpt5" name="desc" rows="4" cols="50" placeholder="Description (Optional) ......."></textarea>
+        </div>
+        <button class="addbtn" onclick="saveentry()">
+            <span class="addbtn__text">Add Entry</span>
+        </button>
+    </div>
+  </div>
+
+  <script src="entry.js"></script>
+</body>
+</html>

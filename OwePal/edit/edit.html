@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayBook</title>
+    <link rel="stylesheet" href="edit.css">
+    <link rel="icon" href="../icons/owepal_icon.png" type="image/png">
+</head>
+<body>
+  <div class="edit">
+      <div class="formholder">
+        <div class="header">
+          <h1>Editing Form</h1>
+        </div>
+        <div class="namebox">
+          <h2>Name - </h2>
+          <input type="text" name="name" id="inpt1" required>
+        </div>
+        <div class="numberbox">
+          <h2>Number - </h2>
+          <input type="text" name="num" id="inpt2" required>
+        </div>
+        <button type="submit" class="addbtn" onclick="saveEdit()">
+            <span class="addbtn__text">Confirm Edit</span>
+        </button>
+      </div>
+
+  </div>
+  <script src="edit.js"></script>
+</body>
+</html>

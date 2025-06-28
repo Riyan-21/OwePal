@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayBook</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="../icons/owepal_icon.png" type="image/png">
+</head>
+<body>
+    <div class="home" id="home">
+      <div class="header">
+          <img id="logo" src="../icons/OwePal_Logo_love.png" onclick="footer()" alt="">
+          <button class="addnew" onclick="window.location.href ='../addition/addition.html'">
+            <span class="addnew__text">Add New</span>
+          </button>
+      </div>
+      <div class="footer" id="footer">
+        <div class="images">
+          <img onclick="window.location.href = `https://www.facebook.com/people/Riyan-Kundu/100080783282040/`" class="foot" role="button" src="../icons/icons8-facebook-100.png" alt="">
+          <img onclick="window.location.href =`https://www.instagram.com/riyan.kundu/`" class="foot" role="button" src="../icons/icons8-instagram-100.png" alt="">
+          <img onclick="window.open(`https://www.linkedin.com/in/riyan-kundu/`, `_blank`);" class="foot" role="button" src="../icons/icons8-linkedin-100.png" alt="">
+        </div>
+        <button class="reset" onclick="resetAll()" type="button">
+          RESET ALL
+        </button>
+      </div>
+      <img  id="watermark" src="../icons/OwePal_Logo.png" alt="">
+
+      <div class="list" id="list">
+
+        
+        <!-- <div class="listitems">
+          <div class="holder">
+            <p class="name">Alex - 50</p>
+            <div class="status red"></div>
+          </div>
+          <img src="../icons/icons8-three-dots-50.png" alt="" class="itemmenu">
+        </div> -->
+
+      
+      </div>
+
+    </div>
+    <div class="hider" id="hider"></div>
+        
+
+  <script src="home.js"></script>
+</body>
+</html>

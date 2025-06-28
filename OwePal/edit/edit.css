@@ -1,0 +1,111 @@
+*{
+     -webkit-tap-highlight-color: transparent; /* removes blue/gray tap effect */
+}
+body{
+    background-color: rgb(252, 202, 0);
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    
+}
+.edit{
+    border: 0px black solid;
+    max-width: 425px;
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.formholder{
+    border-radius: 20px;
+    width: 95%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+.header{
+    display: flex;
+    height: 80px;
+    margin: 20px;
+    background-color: rgb(252, 202, 0);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.header>h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.namebox, .numberbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.namebox>input{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding-left: 8px;
+    font-weight: 550;
+}
+.numberbox>input{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 55%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding-left: 8px;
+    font-weight: 550;
+}
+.namebox>h2, .numberbox>h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 8px;
+}
+.addbtn{
+  line-height: 1;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 72px;
+  color: #fff;
+  border: 1px solid transparent;
+  font-weight: 700;
+  border-radius: 64px;
+  box-shadow: 0 0.7em 1.5em -0.5em hsla(270, 100%, 23%, 0.697);
+  transition: transform 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    rgb(200, 0, 255) 0%,
+    rgb(32, 0, 194) 100%
+  );
+}
+.addbtn__text{
+    font-size: 20px;
+}
+.addbtn:active {
+    background: linear-gradient(
+    190deg,
+    rgb(200, 0, 255) 0%,
+    rgb(32, 0, 194) 100%
+  );
+  transform: scale(0.98);
+  box-shadow: 0 0.5em 1.5em -0.5em hsla(270, 100%, 41%, 0.468);
+}
+
